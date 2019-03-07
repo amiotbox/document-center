@@ -1,7 +1,7 @@
 ---
 title: 介绍
 type: docs
-order: 1
+order: 34
 ---
 
 FastAdmin是一款基于ThinkPHP5+Bootstrap的极速后台开发框架aaaaaaaa  https://github.com/karsonzhang/fastadmin-doc    https://github.com/karsonzhang/fastadmin-doc/blob/master/{relativepath}。

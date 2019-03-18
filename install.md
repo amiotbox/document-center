@@ -1,5 +1,5 @@
 ---
-title: 安装
+title: 快速开始
 type: docs
 order: 2
 ---
@@ -7,56 +7,85 @@ order: 2
 ## **环境要求**
 
 ~~~
-PHP >= 5.5.0 (推荐PHP7.1版本)
-Mysql >= 5.5.0 (需支持innodb引擎)
-Apache 或 Nginx
-PDO PHP Extension
-MBstring PHP Extension
-CURL PHP Extension
-Node.js (可选,用于安装Bower和LESS,同时打包压缩也需要使用到)
-Composer (可选,用于管理第三方扩展包)
-Bower (可选,用于管理前端资源)
-Less (可选,用于编辑less文件,如果你需要增改css样式,最好安装上)
+服务端：
+
+cup：256 DDR3以上
+
+内存： 512MB以上
+
+系统：liunx ubuntu 16.04以上
+
+客户端：
+
+cup：256 DDR3以上
+
+内存： 512MB以上
+
+系统：Windows2003及以上
+
 ~~~
 
-## **完整包安装**
+## **安装**
 
-1. 前往官网下载页面([https://www.fastadmin.net/download.html](https://www.fastadmin.net/download.html?ref=docs))下载完整包解压到你的项目目录
-2. 添加虚拟主机并绑定到项目中的`public`目录
-3. 访问 http://www.yoursite.com/install.php 进行安装
+1. 前往官网下载页面([http://www.gkiiot.com/index/index/download.html](http://www.gkiiot.com/index/index/download.html))下载完安装包。点击下载好的安装包，会弹出安装界面。程序默认安装在C:\Program Files (x86)\HC-IIoT 目录,可自行选择安装目录。
 
-## **命令行安装**
+![20190318093955.png](https://i.loli.net/2019/03/18/5c8ef6ef995fd.png)
 
-强烈建议使用命令行安装，因为采用命令行安装的方式可以和FastAdmin随时保持更新同步。使用命令行安装请提前准备好Git、Node.js、Composer、Bower环境，我们为Windows下开发者准备了一个简单的视频安装教程( https://www.fastadmin.net/video/install.html )，可跟着教程一步一步安装。Linux下FastAdmin的安装请使用以下命令进行安装。
 
-1. 克隆FastAdmin到你本地
-   `git clone https://gitee.com/karson/fastadmin.git `
-2. 进入目录
-   `cd fastadmin `
-3. 下载前端插件依赖包
-   `bower install `
-4. 下载PHP依赖包
-   `composer install`
-5. 一键创建数据库并导入数据
-   `php think install -u 数据库用户名 -p 数据库密码`
-6. 添加虚拟主机并绑定到`fastadmin/public`目录
+设置好路径后点击安装，程序进入部署阶段，界面会有进度条显示安装进度。
 
-## **常见问题**
-1. 如果使用`命令行安装`则后台管理默认密码是`123456`
-2. 提示`请先下载完整包覆盖后再安装`，说明你是直接从仓库下载的代码，请从官网下载完整包覆盖后再进行安装
-3. 执行`php think install`时出现`Access denied for user ...`，请确保数据库服务器、用户名、密码配置正确
-4. 执行`php think install`时报不是内部或外部命令? 请将`php.exe`所在的目录路径加入到环境变量PATH中
-5. 如果提示`当前权限不足，无法写入配置文件application/database.php`，请检查`database.php`是否可读，还有可能是当前安装程序无法访问父目录，请检查PHP的`open_basedir`配置
-6. 如果提示`找不到fastadmin.fa_admin`表或表不存在，请检查你的MySQL是否开启了支持`innodb`。
-7. 如果在Linux环境中使用的是root账户，`bower install`执行出错，请尝试添加上`--allow-root`参数
-8. 如果访问后台右侧空白，请检查资源是否下载完整，可使用`bower install`多试两次或下载资源包覆盖
-9. 如果`composer install`失败，请尝试在命令行进行切换配置到国内源，命令如下`composer config -g repo.packagist composer https://packagist.laravel-china.org`
+![20190318094151.png](https://i.loli.net/2019/03/18/5c8ef7637d1d1.png)
+
+
+等进度条读完后，程序正式部署成功，在安装成功界面勾选 运行海创-IIoT 运行本程序，或者点击桌面快捷方式以及安装目录下的HC-IIoT文件进入
+
+![20190318094406.png](https://i.loli.net/2019/03/18/5c8ef7ea1e545.png)
+
+
+程序程序开始运行后，会弹出加载窗口。当运行界面出现如图所示加载窗口以及登录界面，则程序运行成功
+
+![20190318094704.png](https://i.loli.net/2019/03/18/5c8ef8a4d513c.png)
+
+
+![20190318094736.png](https://i.loli.net/2019/03/18/5c8ef8bd93a31.png)
 
 
 
+## **登录**
 
-遇到问题到[社区](https://forum.fastadmin.net) 或QQ群：[636393962](https://jq.qq.com/?_wv=1027&k=487PNBb) 反馈
+![20190315102001.png](https://i.loli.net/2019/03/15/5c8b0be5adee9.png)
+
+输入账号密码，点击登录
+
+## **升级授权**
+海创物联开发平台共分为4个版本
+
+免费版：支持Modbus-tcp/Serial，mqtt，Mysql数据库等功能。
+
+商业版本：支持Modbus-tcp/Serial，Fins协议，三菱Fx协议，HostLink协议，Logix AB协议，三菱MC协议，Mewtocol协议，西门子S7协议等等，预装了兼容市面上90%的PLC采集协议以及其他的数据采集通讯协议，需要授权才可以使用，联系方式见下面。
+
+采集盒子网关：支持商业版所有功能，性能图表分析等功能，需要授权才可以使用，联系方式见下面。
+
+智能盒子网关：支持采集盒子网关所有功能，边缘计算等功能，需要授权才可以使用，联系方式见下面。
+
+联系方式：
+
+微信：![20190318093316.png](https://i.loli.net/2019/03/18/5c8ef55fef82b.png)
 
 
+QQ群：219496645
+
+Email: (875614491#qq.com, 把#换成@)
+
+电话：0591-38721928
+
+## **注册**
+
+接下要需要一个账号才能使用开发平台，我们点击注册，账号注册分为企业和个人两种模式。
+
+![20190318092603.png](https://i.loli.net/2019/03/18/5c8ef3beaba13.png)
 
 
+注册完成后就可以使用AM-IOT可视化开发平台完成各种各样需求的快速开发了。
+
+![20190318092755.png](https://i.loli.net/2019/03/18/5c8ef41fd8f49.png)

@@ -4,94 +4,62 @@ type: docs
 order: 1
 ---
 
-FastAdmin是一款基于ThinkPHP5+Bootstrap的极速后台开发框架aaaaaaaa  https://github.com/karsonzhang/fastadmin-doc    https://github.com/karsonzhang/fastadmin-doc/blob/master/{relativepath}。
+海创IIoT可视化开发平台由中海创科技为工业物联网数据采集开发的一套通用网关产品，整合工业通用设备数据通讯采集方案。
 
+通过串口或者以太网连接现场设备PLC、OPC、变频器、仪表等，将数据通过以太网、GPRS、3G、4G等方式(目前支持有线网络及无线WIFI上报)。
+
+可通过协议转换传输到远端或本地服务器中进行数据采集分析，
+
+完成图表展示、数据解析、在线调试、远程维护、数据存储、实时监控等、故障报警等功能。 可结合手机APP展示数据报表。
 
 ## **主要特性**
 
-* 基于`Auth`验证的权限管理系统
-    * 支持无限级父子级权限继承，父级的管理员可任意增删改子级管理员及权限设置
-    * 支持单管理员多角色
-    * 支持管理子级数据或个人数据
-* 强大的一键生成功能
-    * 一键生成CRUD,包括控制器、模型、视图、JS、语言包、菜单等
-    * 一键压缩打包JS和CSS文件，一键CDN静态资源部署
-    * 一键生成控制器菜单和规则
-    * 一键生成API接口文档
-* 完善的前端功能组件开发
-    * 基于`AdminLTE`二次开发
-    * 基于`Bootstrap`开发，自适应手机、平板、PC
-    * 基于`RequireJS`进行JS模块管理，按需加载
-    * 基于`Less`进行样式开发
-    * 基于`Bower`进行前端组件包管理
-* 强大的插件扩展功能，在线安装卸载升级插件
-* 通用的会员模块和API模块
-* 共用同一账号体系的Web端会员中心权限验证和API接口会员权限验证
-* 二级域名部署支持，同时域名支持绑定到插件
-* 多语言支持，服务端及客户端支持
-* 强大的第三方模块支持([CMS](https://www.fastadmin.net/store/cms.html)、[博客](https://www.fastadmin.net/store/blog.html)、[文档生成](https://www.fastadmin.net/store/docs.html)、[知识付费问答](https://www.fastadmin.net/store/ask.html))
-* 整合第三方短信接口(阿里云、腾讯云短信)
-* 无缝整合第三方云存储(七牛、阿里云OSS、又拍云)功能
-* 第三方富文本编辑器支持(Summernote、Tinymce、百度编辑器)
-* 第三方登录(QQ、微信、微博)整合
-* Ucenter整合第三方应用
+### 数据采集
+IIoT可视化平台内部预装了兼容市面上90%的PLC采集协议以及其他的数据采集通讯协议，通过拖拽式就可以快速的采集到数据。
 
-## **安装使用**
+### 时序数据库
 
-https://doc.fastadmin.net
+IIoT可视化平台的时序数据库设计用于满足工业高速和大量数据的访问需求。只需在画板中配置数据插入时序数据库功能，IIoT可视化平台监控节点即以每秒数百万笔的速度记录数据。
 
-## **在线演示**
+### 商业智能仪表板
 
-https://demo.fastadmin.net
+IIoT可视化平台通过基于HTML5的图形面板提供商业智能分析服务，用户可以通过分析图表之类的小工具(widgets)自定义信息显示页面，用户可以通过PC电脑、苹果电脑、平板电脑和智能手机在不同的浏览器上观看，如（IE、Safari、Chrome和Firefox）上可无缝呈现。
 
-用户名：admin
+### 报警管理功能
 
-密　码：123456
+IIoT可视化平台报警功能提供不同的报警群组和等级设置，将制程和设备的状态以电子邮件的方式通知操作员。用户可以自定义报警内容、时间并设定报警，报警信息可以通过电子邮件发送给多个接收者。
 
-提　示：演示站数据无法进行修改，请下载源码安装体验全部功能
+## **使用体验**
+
+下载链接：https://pan.baidu.com/s/1ogOwAdyPSTkIdmMuQtmOPg 
+
+提取码：s418 
+
+下载安装后进行注册登录使用。
 
 ## **界面截图**
-![控制台](https://gitee.com/uploads/images/2017/0411/113717_e99ff3e7_10933.png "控制台")
+
+![20190314143523.png](https://i.loli.net/2019/03/14/5c89f653b8ba5.png)
 
 ## **问题反馈**
 
-在使用中有任何问题，请使用以下联系方式联系我们
+在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
 
-交流社区: https://forum.fastadmin.net
+交流社区: http://bbs.gkiiot.com
 
-QQ群: [636393962](https://jq.qq.com/?_wv=1027&k=487PNBb)(满) [708784003](https://jq.qq.com/?_wv=1027&k=5ObjtwM)(满) [964776039](https://jq.qq.com/?_wv=1027&k=59qjU2P)(3群)
+微信：
+![20190318093316.png](https://i.loli.net/2019/03/18/5c8ef55fef82b.png)
 
-Email: (karsonzhang#163.com, 把#换成@)
+QQ群：219496645
 
-Github: https://github.com/karsonzhang/fastadmin
+Email: (875614491#qq.com, 把#换成@)
 
-Gitee: https://gitee.com/karson/fastadmin
-
-## **特别鸣谢**
-
-感谢以下的项目,排名不分先后
-
-ThinkPHP：http://www.thinkphp.cn
-
-AdminLTE：https://adminlte.io
-
-Bootstrap：http://getbootstrap.com
-
-jQuery：http://jquery.com
-
-Bootstrap-table：https://github.com/wenzhixin/bootstrap-table
-
-Nice-validator: https://validator.niceue.com
-
-SelectPage: https://github.com/TerryZ/SelectPage
-
+电话：0591-38721928
 
 ## **版权信息**
 
-FastAdmin遵循Apache2开源协议发布，并提供免费使用。
+![20190311060637.png](https://i.loli.net/2019/03/11/5c858a7b9c1a3.png)
 
-本项目包含的第三方源码和二进制文件之版权信息另行标注。
+![20190311060715.png](https://i.loli.net/2019/03/11/5c858aa28e7c6.png)
 
-版权所有Copyright © 2017-2019 by FastAdmin (https://www.fastadmin.net)
-
-All rights reserved。
+版权所有 福建中海创科技有限责任公司
